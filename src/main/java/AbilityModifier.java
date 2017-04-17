@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class AbilityModifier {
 
-    public Map<Integer, Integer> abilityModifier = new HashMap<Integer, Integer>() {
+    private final Map<Integer, Integer> ABILITYMODIFIER = new HashMap<Integer, Integer>() {
 
         {
             put(1, -5);
@@ -29,11 +29,11 @@ public class AbilityModifier {
         }
     };
 
-    public Map<Integer, Integer> getAbilityModifier() {
-        return abilityModifier;
+    public Map<Integer, Integer> getABILITYMODIFIER() {
+        return ABILITYMODIFIER;
     }
 
     public int getModifier(Integer integer) {
-        return abilityModifier.get(integer);
+        return ABILITYMODIFIER.get(integer);
     }
 }
